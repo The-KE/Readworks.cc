@@ -1,5 +1,5 @@
 *{font-family:"Poppins";}
-h1{font-size:30px}
+h1{font-size:42px;font-weight:600;margin-bottom:8px;letter-spacing:2px;}
 body{height:100vh;background:#0a0f14;overflow-y:auto;color:white;transition:background 0.5s;margin:0;}
 canvas{position:fixed;top:0;left:0;z-index:0}
 .container{position:relative;z-index:2;height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
