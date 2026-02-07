@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nugget</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>src="Style.css"</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="container">
+    <div class="center-box">
+        <div class="logo">Nugget</div>
+        <div class="credit">Brought to you by f7lip and UnkownKE</div>
+        <input type="text" class="search" id="search" placeholder="search...">
+        <div class="section-title">Quick apps</div>
+        <div class="apps">
+            <a class="app" data-url="https://youtube.com">YouTube</a>
+            <a class="app" data-url="https://github.com">GitHub</a>
+            <a class="app" data-url="https://discord.com">Discord</a>
+            <a class="app" data-url="https://tiktok.com">TikTok</a>
+            <a class="app" data-url="https://roblox.com">Roblox</a>
+            <a class="app" data-url="https://filmex.to/">Movies</a>
+            <a class="app" id="gamesBtn">Games</a>
+        </div>
+    </div>
+</div>
+<div id="quickAppFrame">
+        <iframe id="quickappframe" src="https://www.nvidia.com"></iframe>
+</div>
+<div id="movieOverlay">
+    <div id="gamesGrid" style="display:none"></div>
+    <iframe id="movieFrame"></iframe>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
