@@ -4,3 +4,4 @@ body{height:100vh;background:#0a0f14;overflow-y:auto;color:white;transition:back
 canvas{position:fixed;top:0;left:0;z-index:0}
 .container{position:relative;z-index:2;height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
 .emus{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.emus{background:#111821;border:1px solid #1e2a35;border-radius:12px;padding:14px 0;text-decoration:none;color:white;font-size:15px;transition:.35s;cursor:pointer;position:relative;overflow:hidden}
