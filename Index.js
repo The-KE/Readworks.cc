@@ -63,16 +63,3 @@ gamesList.forEach(game=>{
     gamesGrid.appendChild(div)
 })
 */
-document.querySelectorAll(".Forwarder").forEach(app=>{
-    app.addEventListener("click",e=>{
-        e.preventDefault()
-        overlay.style.display="block"
-        gamesGrid.style.display="none"
-        frame.src=""
-        setTimeout(()=>{
-            frame.src=app.dataset.url
-            frame.classList.remove("loaded")
-            setTimeout(()=>frame.classList.add("loaded"),50)
-        },50)
-    })
-})
