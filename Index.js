@@ -33,6 +33,7 @@ const overlay=document.getElementById("movieOverlay")
 const frame=document.getElementById("movieFrame")
 const gamesGrid=document.getElementById("gamesGrid")
 
+/*
 const gamesList=[
     {name:"Minecraft",url:"https://www.minecraft.net/en-us",logo:"https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"},
     {name:"Fortnite",url:"https://www.epicgames.com/fortnite/en-US/home",logo:"https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Fortnite_cover.jpg/220px-Fortnite_cover.jpg"},
@@ -45,8 +46,6 @@ const gamesList=[
     {name:"Genshin Impact",url:"https://genshin.hoyoverse.com",logo:"https://upload.wikimedia.org/wikipedia/en/0/0c/Genshin_Impact_cover.png"},
     {name:"Apex Legends",url:"https://www.ea.com/games/apex-legends",logo:"https://upload.wikimedia.org/wikipedia/en/9/96/Apex_Legends_cover.jpg"},
 ]
-
-let quickFrame=document.getElementById("quickappframe")
 
 gamesList.forEach(game=>{
     const div=document.createElement("div")
@@ -63,7 +62,7 @@ gamesList.forEach(game=>{
     })
     gamesGrid.appendChild(div)
 })
-
+*/
 document.querySelectorAll(".embedApp").forEach(app=>{
     app.addEventListener("click",e=>{
         e.preventDefault()
@@ -76,18 +75,4 @@ document.querySelectorAll(".embedApp").forEach(app=>{
             setTimeout(()=>frame.classList.add("loaded"),50)
         },50)
     })
-})
-
-document.getElementById("gamesBtn").addEventListener("click",()=>{
-    overlay.style.display="block"
-    gamesGrid.style.display="grid"
-    frame.src=""
-})
-
-document.addEventListener("keydown",e=>{
-    if(e.key==="Escape"){
-        overlay.style.display="none"
-        frame.src=""
-        gamesGrid.style.display="none"
-    }
 })
