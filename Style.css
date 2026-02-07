@@ -1,0 +1,28 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+body{height:100vh;background:#0a0f14;overflow-y:auto;color:white;transition:background 0.5s}
+canvas{position:fixed;top:0;left:0;z-index:0}
+.container{position:relative;z-index:2;height:60vh;display:flex;justify-content:center;align-items:center}
+.center-box{width:420px;max-width:90%;text-align:center}
+.logo{font-size:42px;font-weight:600;margin-bottom:8px;letter-spacing:2px;transition:transform 0.3s,color 0.3s}
+.logo:hover{transform:scale(1.05);color:#00b3ff}
+.credit{font-size:12px;opacity:.6;margin-bottom:20px}
+.search{width:100%;padding:14px 18px;border-radius:10px;border:1px solid #1e2a35;background:#111821;color:white;outline:none;font-size:14px;margin-bottom:25px;transition:.3s, box-shadow 0.3s}
+.search:focus{border-color:#00b3ff;box-shadow:0 0 10px rgba(0,179,255,.4)}
+.section-title{text-align:left;font-size:13px;opacity:.6;margin-bottom:10px}
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.app{background:#111821;border:1px solid #1e2a35;border-radius:12px;padding:14px 0;text-decoration:none;color:white;font-size:15px;transition:.35s;cursor:pointer;position:relative;overflow:hidden}
+.app::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(0,179,255,0.15);transition:all 0.35s}
+.app:hover::after{left:0}
+.app:hover{transform:translateY(-4px);border-color:#00b3ff;box-shadow:0 6px 14px rgba(0,179,255,.3)}
+#movieOverlay{position:fixed;background:#000;display:none;z-index:50;overflow:auto;padding:20px;transition:opacity 0.5s}
+#movieOverlay.show{opacity:1}
+#movieFrame{width:100%;height:80%;border:none;margin-top:20px;border-radius:10px;opacity:0;transition:opacity 2s}
+#movieFrame.loaded{opacity:1}
+#gamesGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:10px;margin-top:20px}
+#quickAppFrame {position: relative; z-index: 10; margin-top: 20px;text-align: center;}
+iframe{border: 2px solid #111821;}
+.gameLogo{cursor:pointer;border-radius:10px;border:1px solid #1e2a35;transition:all 0.35s;background:#111821;padding:5px;position:relative;overflow:hidden}
+.gameLogo::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(0,179,255,0.15);transition:all 0.35s}
+.gameLogo:hover::after{left:0}
+.gameLogo img{width:100%;height:auto;border-radius:5px;transition:transform 0.3s}
+.gameLogo:hover img{transform:scale(1.05)}
