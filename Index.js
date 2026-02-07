@@ -63,7 +63,7 @@ gamesList.forEach(game=>{
     gamesGrid.appendChild(div)
 })
 */
-document.querySelectorAll(".embedApp").forEach(app=>{
+document.querySelectorAll(".Forwarder").forEach(app=>{
     app.addEventListener("click",e=>{
         e.preventDefault()
         overlay.style.display="block"
