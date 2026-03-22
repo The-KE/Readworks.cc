@@ -22,4 +22,4 @@ function draw(){
 }
 draw()
 
-let quickFrame=document.getElementById("quickappframe")
+let container = document.query
